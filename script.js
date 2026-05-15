@@ -295,11 +295,15 @@
             return;
           }
 
-          e.preventDefault();
+          var endpoint = (siteConfig.forms && siteConfig.forms.formspreeEndpoint) ? siteConfig.forms.formspreeEndpoint : "";
           submitBtn.disabled = true;
           submitBtn.textContent = "Enviando...";
 
-          var endpoint = (siteConfig.forms && siteConfig.forms.formspreeEndpoint) ? siteConfig.forms.formspreeEndpoint : "";
+          if (endpoint) {
+            return;
+          }
+
+          e.preventDefault();
           if (!endpoint) {
             var name = form.elements["Nombre"] ? form.elements["Nombre"].value : "";
             var email = form.elements["Email"] ? form.elements["Email"].value : "";
@@ -315,39 +319,6 @@
             submitBtn.textContent = "Enviar solicitud";
             return;
           }
-
-          fetch(endpoint, {
-            method: "POST",
-            headers: { "Accept": "application/json" },
-            body: new FormData(form)
-          }).then(function (response) {
-            if (!response.ok) throw new Error("send_failed");
-            form.reset();
-            var msgEvt = document.createEvent("Event");
-            msgEvt.initEvent("input", true, true);
-            var msgEl = document.getElementById("mensaje");
-            if (msgEl) msgEl.dispatchEvent(msgEvt);
-            var toast = document.getElementById("form-toast");
-            if (toast) {
-              toast.classList.add("show");
-              setTimeout(function () {
-                toast.classList.remove("show");
-              }, 4200);
-            }
-          }).catch(function () {
-            var errToast = document.getElementById("form-toast");
-            if (errToast) {
-              errToast.textContent = "No se pudo enviar ahora. Prueba en unos minutos o contacta por WhatsApp.";
-              errToast.classList.add("show");
-              setTimeout(function () {
-                errToast.classList.remove("show");
-                errToast.textContent = "Solicitud enviada correctamente. Te respondere lo antes posible.";
-              }, 5200);
-            }
-          }).finally(function () {
-            submitBtn.disabled = false;
-            submitBtn.textContent = "Enviar solicitud";
-          });
         });
       }
 
