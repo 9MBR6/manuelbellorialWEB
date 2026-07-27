@@ -1,21 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Manuel Bello Rial - Desarrollo web y apps a medida">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Manuel Bello Rial - Curriculum digital">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b1220"/>
-      <stop offset="1" stop-color="#122649"/>
+      <stop offset="0" stop-color="#08111f"/>
+      <stop offset="1" stop-color="#14253d"/>
     </linearGradient>
-    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#1a2b4d"/>
-      <stop offset="1" stop-color="#14223d"/>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#68e1fd"/>
+      <stop offset="1" stop-color="#8bffbd"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <circle cx="1020" cy="120" r="220" fill="#22c55e" opacity="0.12"/>
-  <circle cx="140" cy="80" r="180" fill="#38bdf8" opacity="0.12"/>
-  <rect x="86" y="96" width="1028" height="438" rx="24" fill="url(#card)" stroke="#35578c"/>
-  <text x="130" y="210" fill="#e8eefc" font-family="Segoe UI, Calibri, sans-serif" font-size="66" font-weight="700">Manuel Bello Rial</text>
-  <text x="130" y="286" fill="#c6d5ed" font-family="Segoe UI, Calibri, sans-serif" font-size="44" font-weight="600">Desarrollo web y apps a medida</text>
-  <text x="130" y="352" fill="#b2c3df" font-family="Segoe UI, Calibri, sans-serif" font-size="33">Full-Stack / Multiplataforma para negocios y profesionales</text>
-  <rect x="130" y="404" width="330" height="58" rx="29" fill="#22c55e"/>
-  <text x="164" y="442" fill="#072010" font-family="Segoe UI, Calibri, sans-serif" font-size="31" font-weight="700">Solicitar presupuesto</text>
+  <circle cx="1040" cy="100" r="230" fill="#68e1fd" opacity="0.12"/>
+  <circle cx="120" cy="520" r="240" fill="#8bffbd" opacity="0.1"/>
+  <rect x="82" y="82" width="1036" height="466" rx="34" fill="#0f1c2f" opacity="0.88" stroke="#29415f"/>
+  <rect x="130" y="136" width="104" height="104" rx="30" fill="url(#accent)"/>
+  <text x="156" y="200" fill="#06121f" font-family="Segoe UI, Calibri, sans-serif" font-size="38" font-weight="900">MB</text>
+  <text x="130" y="318" fill="#edf4ff" font-family="Segoe UI, Calibri, sans-serif" font-size="72" font-weight="800">Manuel Bello Rial</text>
+  <text x="130" y="388" fill="#cfdced" font-family="Segoe UI, Calibri, sans-serif" font-size="42" font-weight="600">Programador Java Spring</text>
+  <text x="130" y="452" fill="#aebed5" font-family="Segoe UI, Calibri, sans-serif" font-size="31">Desarrollo de aplicaciones multiplataforma · Sistemas · Backend</text>
+  <rect x="130" y="482" width="366" height="46" rx="23" fill="#68e1fd" opacity="0.16" stroke="#68e1fd"/>
+  <text x="156" y="514" fill="#dff7ff" font-family="Segoe UI, Calibri, sans-serif" font-size="25" font-weight="700">manuelbellorial.es</text>
 </svg>
